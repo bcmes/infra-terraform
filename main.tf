@@ -25,7 +25,7 @@ provider "aws" {
 #  instance_type = "t2.micro"
 #}
 
-resource "aws_s3_bucket" "terraform_state" {
+resource "aws_s3_bucket" "terraform_state" { #resource "tipo do recurso" "de um nome ao recurso criado"
   bucket = "devops-directive-tf-state" #name do bucket na aws
   force_destroy = true
   versioning {
